@@ -1,0 +1,15 @@
+{
+    "name": "gmsantos/monolog-insightops-handler",
+    "description": "Monolog Handler for use with InsightOps",
+    "type": "library",
+    "require": {
+        "monolog/monolog": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gmsantos",
+            "email": "gabriel.ms1@hotmail.com"
+        }
+    ]
+}
