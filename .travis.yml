@@ -22,8 +22,7 @@ matrix:
   fast_finish: true
 
 before_script:
-  - if [[ $TRAVIS_PHP_VERSION = 5.* ]]; then echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi
   - if [ "$deps" == "low" ]; then composer update --prefer-source --prefer-lowest --prefer-stable; fi
   - if [ "$deps" != "low" ]; then composer install --prefer-source; fi
 
-script: composer test
+script: vendor/bin/phpunit
