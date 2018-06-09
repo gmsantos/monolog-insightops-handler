@@ -12,8 +12,9 @@
 namespace Gmsantos\Monolog\Handler;
 
 use Monolog\Logger;
+use PHPUnit\Framework\TestCase as BaseTestCase;
 
-class TestCase extends \PHPUnit_Framework_TestCase
+class TestCase extends BaseTestCase
 {
     /**
      * @return array Record
